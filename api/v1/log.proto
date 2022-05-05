@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package log.v1;
+
+option go_package = "github.com/mroobert/api/log_v1";
+
+message Record {
+  bytes values = 1;
+  uint64 offset = 2;
+}
